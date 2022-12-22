@@ -1,0 +1,8 @@
+<div class="text-center">
+    <p>formulario works!</p>
+
+    <form [[formGroup]="form"]>
+        <input type="text" class="form-control" [ngClass]="{'error-validation': sub && f['user'].errors, 'success-validation':user.valid && (user.dirty || user.touched) }" formControlName="user">
+        <button class="btn btn-success">Accept</button>
+    </form>
+</div>
